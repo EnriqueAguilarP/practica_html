@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pastelería Delicias</title>
+        <link rel='stylesheet' type='text/css' href='style.css'>
+    </head>
+    <body>
+        <div class='header'>
+            <h1>Bienvenidos a la Pastelería Delicias</h1>
+        </div>
+        <div class='contacto'>
+            <h2>Dirección</h2>
+            <p>Calle Del Bosque 304. Colonia Pradera. León, Guanajuato</p>
+            <h2>Teléfono</h2>
+            <p>4773691278</p>
+        </div>
+        <div class='horarios'>
+            <h2>Horarios de atención</h2>
+            <table>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+                <tr>
+                    <td>Lunes a Viernes</td>
+                    <td>De 10 de la mañana a 5 de la tarde</td>
+                </tr>
+                <tr>
+                    <td>Sábados y Domingos</td>
+                    <td>De 9 de la mañana a 7 de la tarde</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+
+        <div class='formulario'>
+            <h2>Escribe tu orden, estamos para servirte</h2>
+            <form action="pastelero.html" id="form1" method="POST">
+                <label for="nombre">Escribe tu nombre: </label>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="telefono">Escribe tu telefono: </label>
+                <input type="tel" id="telefono" name="telefono" minlength="10" required><br>
+
+                <label for="correo">Escribe tu correo electrónico: </label>
+                <input type="email" id="correo" name="correo" required><br>
+
+                <label for="descripcion">Anora una descripcion general de tu pastel: </label>
+                <input type="text" id="descripcion" name="descripcion" required><br>
+
+                <section class="sabores">
+                    <span>Selecciona los sabores de tu pastel</span><br>
+                    <input type="checkbox" name="sabores" id="vainilla" value="vainilla">
+                    <label for="vainilla">Vainilla $50</label><br>
+                    <input type="checkbox" name="sabores" id="chocolate" value="chocolate">
+                    <label for="chocolate">Chocolate $60</label><br>
+                    <input type="checkbox" name="sabores" id="fresa" value="fresa">
+                    <label for="fresa">Fresa $50</label><br>
+                    <input type="checkbox" name="sabores" id="limon" value="limon">
+                    <label for="limon">Limón $50</label><br>
+                    <input type="checkbox" name="sabores" id="ganache" value="ganache">
+                    <label for="ganache">Ganache $70</label><br>
+                    <input type="checkbox" name="sabores" id="mermelada" value="mermelada">
+                    <label for="mermelada">Mermelada de fresa $80</label><br>
+                    <input type="checkbox" name="sabores" id="crema" value="crema">
+                    <label for="crema">Crema de leche $60</label><br>
+                </section><br>
+                
+                <section class="adornos">
+                    <span>Selecciona la cubierta o los adornos</span><br>
+                    <input type="checkbox" name="adornos" id="caramelo" value="caramelo">
+                    <label for="caramelo">Caramelo $40</label><br>
+                    <input type="checkbox" name="adornos" id="fondant" value="fondant">
+                    <label for="fondant">Fondant $80</label><br>
+                    <input type="checkbox" name="adornos" id="chantilly" value="chantilly">
+                    <label for="chantilly">Chantilly $60</label><br>
+                    <input type="checkbox" name="adornos" id="merengue" value="merengue">
+                    <label for="merengue">Merengue $60</label><br>
+                </section><br>
+
+                <input type="submit" value="Enviar pedido">
+                <input type="reset">
+            </form>
+        </div>
+        
+    </body>
+</html>
